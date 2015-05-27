@@ -34,7 +34,7 @@
 
       <div class="blog-header">
         <h1 class="blog-title">PSkel</h1>
-        <p class="lead blog-description">A high-performance framework for parallel skeletons.</p>
+        <p class="lead blog-description">A high-performance framework for stencil computations.</p>
       </div>
 
       <div class="row">
@@ -43,8 +43,10 @@
 
           <div class="blog-post">
             <h2 class="blog-post-title">Introduction</h2>
-              
-            <p>
+              <p>
+                  PSkel is an application programming interface (API) that leverages the extensibility of C++ to provide common stencil functionality. Using parallel skeletons, PSkel releases the programmer from the responsibility of writing boiler-plate code for stencil programming (e.g., explicit synchronization and data exchanges between GPU memory and main memory). Furthermore, the framework translates the abstractions described using its API into lowlevel C++ code compatible with Intel TBB, OpenMP and NVIDIA CUDA. PSkel’s API is a C++ template library that implements a stencil parallel skeleton and provides useful constructs for developing parallel stencil applications. The API provides templates for manipulating input and output data; specifying stencil masks; encapsulating memory management, computations, and runtime details.
+              </p>
+            <!--p>
                 PSkel is a high-performance framework for parallel skeletons.
                 PSkel provides a single high-level abstraction for parallel skeletons
                 on heterogeneous CPU-GPU systems. The current implementation uses parallel
@@ -52,7 +54,7 @@
                 Intel Threading Building Blocks (TBB - Intel Corporation),
                 and NVIDIA CUDA (Nvidia Corporation). The current version of PSkel supports both
                 the stencil and map parallel patterns.
-            </p>
+            </p-->
           </div><!-- /.blog-post -->
 
           <div class="blog-post">
