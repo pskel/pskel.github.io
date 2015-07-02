@@ -122,7 +122,6 @@ Inheritance diagram for PSkel::ArrayBase&lt; T &gt;:</div>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPSkel_1_1ArrayBase.html#a32389d99d30a09b08eba47a77c58484b">ArrayBase</a> (size_t width, size_t height, size_t depth)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPSkel_1_1ArrayBase.html#a67374b212fa40fc13330633c069dbb13">deviceAlloc</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPSkel_1_1ArrayBase.html#ac5fccf68c216130220caf59239a458a3">deviceFree</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3fa03951cdda49113023fcaae462145e"></a><!-- doxytag: member="PSkel::ArrayBase::hostAlloc" ref="a3fa03951cdda49113023fcaae462145e" args="(size_t width, size_t height, size_t depth)" -->
@@ -148,8 +147,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>hostAlloc</b> (size_t
 <tr><td class="memItemLeft" align="right" valign="top">__device__ __host__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPSkel_1_1ArrayBase.html#a4e04f00d62efd1554f0ee6cfe5ebc2da">operator bool</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">__forceinline__ __device__ T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPSkel_1_1ArrayBase.html#a735313f25c1168da7468dab1514cada9">deviceGet</a> (size_t h, size_t w, size_t d) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">__forceinline__ __host__ T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPSkel_1_1ArrayBase.html#ac216018b021e49419cf93cb86adce7aa">hostGet</a> (size_t h, size_t w, size_t d) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">__device__ __forceinline__ T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPSkel_1_1ArrayBase.html#a2543c73b53edbc80a216afedcfed6fdb">deviceGet</a> (size_t h, size_t w, size_t d) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">__host__ __forceinline__ T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPSkel_1_1ArrayBase.html#ac216018b021e49419cf93cb86adce7aa">hostGet</a> (size_t h, size_t w, size_t d) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPSkel_1_1ArrayBase.html#a32389d99d30a09b08eba47a77c58484b">ArrayBase</a> (size_t width, size_t height, size_t depth)</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br/>
@@ -184,7 +184,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -306,14 +306,14 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a735313f25c1168da7468dab1514cada9"></a><!-- doxytag: member="PSkel::ArrayBase::deviceGet" ref="a735313f25c1168da7468dab1514cada9" args="(size_t h, size_t w, size_t d) const " -->
+<a class="anchor" id="a2543c73b53edbc80a216afedcfed6fdb"></a><!-- doxytag: member="PSkel::ArrayBase::deviceGet" ref="a2543c73b53edbc80a216afedcfed6fdb" args="(size_t h, size_t w, size_t d) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T &amp; <a class="el" href="classPSkel_1_1ArrayBase.html">PSkel::ArrayBase</a>&lt; T &gt;::<a class="el" href="classPSkel_1_1ArrayBase.html#a735313f25c1168da7468dab1514cada9">deviceGet</a> </td>
+          <td class="memname">__device__ __forceinline__ T &amp; <a class="el" href="classPSkel_1_1ArrayBase.html">PSkel::ArrayBase</a>&lt; T &gt;::<a class="el" href="classPSkel_1_1ArrayBase.html#a2543c73b53edbc80a216afedcfed6fdb">deviceGet</a> </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>h</em>, </td>
@@ -725,11 +725,17 @@ template&lt;typename T &gt; </div>
 
 
 
-<hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 9 2015 03:36:36 for PSkel by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.7.6.1
-</small></address>
+<hr class="footer"/>
+<address class="footer">
+ <div style="float:left;"><a href="http://pskel.github.io/">PSkel Homepage</a></div>
+ <div style="float:right;">
+  <small>
+  Generated on Thu Jul 2 2015 19:15:47 for PSkel by &#160;<a href="http://www.doxygen.org/index.html">
+  <img class="footer" src="doxygen.png" alt="doxygen"/>
+  </a> 1.7.6.1
+  </small>
+ </div>
+</address>
 
 </body>
 </html>

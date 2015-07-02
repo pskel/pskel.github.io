@@ -78,7 +78,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">src/PSkel.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//-------------------------------------------------------------------------------</span>
+<a href="PSkel_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//-------------------------------------------------------------------------------</span>
 <a name="l00002"></a>00002 <span class="comment">// Copyright (c) 2015, ICEI - PUC Minas</span>
 <a name="l00003"></a>00003 <span class="comment">// All rights reserved.</span>
 <a name="l00004"></a>00004 <span class="comment">// </span>
@@ -108,36 +108,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00028"></a>00028 <span class="comment">// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
 <a name="l00029"></a>00029 <span class="comment">//-------------------------------------------------------------------------------</span>
 <a name="l00030"></a>00030 
-<a name="l00031"></a>00031 <span class="preprocessor">#ifndef PSKEL_H</span>
-<a name="l00032"></a>00032 <span class="preprocessor"></span><span class="preprocessor">#define PSKEL_H</span>
-<a name="l00033"></a>00033 <span class="preprocessor"></span>
-<a name="l00034"></a>00034 <span class="preprocessor">#include &lt;stdio.h&gt;</span>
-<a name="l00035"></a>00035 <span class="preprocessor">#include &lt;cstdio&gt;</span>
-<a name="l00036"></a>00036 <span class="preprocessor">#include &lt;stdlib.h&gt;</span>
-<a name="l00037"></a>00037 <span class="preprocessor">#include &lt;time.h&gt;</span>
-<a name="l00038"></a>00038 <span class="preprocessor">#include &lt;typeinfo&gt;</span>
-<a name="l00039"></a>00039 <span class="preprocessor">#include &lt;iostream&gt;</span>
-<a name="l00040"></a>00040 <span class="preprocessor">#include &lt;cuda.h&gt;</span>
-<a name="l00041"></a>00041 <span class="preprocessor">#include &lt;cuda_runtime_api.h&gt;</span>
-<a name="l00042"></a>00042 <span class="preprocessor">#include &lt;tbb/blocked_range.h&gt;</span>
-<a name="l00043"></a>00043 <span class="preprocessor">#include &lt;tbb/parallel_for.h&gt;</span>
-<a name="l00044"></a>00044 <span class="preprocessor">#include &lt;tbb/task_scheduler_init.h&gt;</span>
-<a name="l00045"></a>00045 <span class="preprocessor">#include &lt;omp.h&gt;</span>
-<a name="l00046"></a>00046 <span class="preprocessor">#include &lt;papi.h&gt;</span>
-<a name="l00047"></a>00047 
-<a name="l00048"></a>00048 <span class="preprocessor">#define __stencil__ __device__ __host__ __attribute__((always_inline)) __forceinline__</span>
-<a name="l00049"></a>00049 <span class="preprocessor"></span><span class="preprocessor">#define __parallel__ __device__ __host__ __attribute__((always_inline)) __forceinline__</span>
-<a name="l00050"></a>00050 <span class="preprocessor"></span><span class="comment">//#define __stencil__ __device__ __host__</span>
-<a name="l00051"></a>00051 <span class="comment">//#define __parallel__ __device__ __host__</span>
-<a name="l00052"></a>00052 
-<a name="l00053"></a>00053 <span class="preprocessor">#include &quot;PSkelErrchk.h&quot;</span>
-<a name="l00054"></a>00054 <span class="preprocessor">#include &quot;<a class="code" href="PSkelArray_8h.html">PSkelArray.h</a>&quot;</span>
-<a name="l00055"></a>00055 <span class="preprocessor">#include &quot;PSkelArgs.h&quot;</span>
-<a name="l00056"></a>00056 <span class="preprocessor">#include &quot;PSkelMask.h&quot;</span>
-<a name="l00057"></a>00057 <span class="preprocessor">#include &quot;<a class="code" href="PSkelStencil_8h.html">PSkelStencil.h</a>&quot;</span>
-<a name="l00058"></a>00058 <span class="comment">//#include &quot;PSkelRuntime.h&quot;</span>
-<a name="l00059"></a>00059 
-<a name="l00060"></a>00060 <span class="preprocessor">#endif</span>
+<a name="l00055"></a>00055 <span class="preprocessor">#ifndef PSKEL_H</span>
+<a name="l00056"></a>00056 <span class="preprocessor"></span><span class="preprocessor">#define PSKEL_H</span>
+<a name="l00057"></a>00057 <span class="preprocessor"></span>
+<a name="l00058"></a>00058 <span class="preprocessor">#include &lt;stdio.h&gt;</span>
+<a name="l00059"></a>00059 <span class="preprocessor">#include &lt;cstdio&gt;</span>
+<a name="l00060"></a>00060 <span class="preprocessor">#include &lt;stdlib.h&gt;</span>
+<a name="l00061"></a>00061 <span class="preprocessor">#include &lt;time.h&gt;</span>
+<a name="l00062"></a>00062 <span class="preprocessor">#include &lt;typeinfo&gt;</span>
+<a name="l00063"></a>00063 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00064"></a>00064 <span class="preprocessor">#include &lt;cuda.h&gt;</span>
+<a name="l00065"></a>00065 <span class="preprocessor">#include &lt;cuda_runtime_api.h&gt;</span>
+<a name="l00066"></a>00066 <span class="preprocessor">#include &lt;tbb/blocked_range.h&gt;</span>
+<a name="l00067"></a>00067 <span class="preprocessor">#include &lt;tbb/parallel_for.h&gt;</span>
+<a name="l00068"></a>00068 <span class="preprocessor">#include &lt;tbb/task_scheduler_init.h&gt;</span>
+<a name="l00069"></a>00069 <span class="preprocessor">#include &lt;omp.h&gt;</span>
+<a name="l00070"></a>00070 <span class="comment">//#include &lt;papi.h&gt;</span>
+<a name="l00071"></a>00071 
+<a name="l00072"></a>00072 <span class="preprocessor">#include &quot;<a class="code" href="PSkelDefs_8h.html">PSkelDefs.h</a>&quot;</span>
+<a name="l00073"></a>00073 <span class="preprocessor">#include &quot;<a class="code" href="PSkelArray_8h.html">PSkelArray.h</a>&quot;</span>
+<a name="l00074"></a>00074 <span class="preprocessor">#include &quot;PSkelArgs.h&quot;</span>
+<a name="l00075"></a>00075 <span class="preprocessor">#include &quot;<a class="code" href="PSkelMask_8h.html">PSkelMask.h</a>&quot;</span>
+<a name="l00076"></a>00076 <span class="preprocessor">#include &quot;<a class="code" href="PSkelStencil_8h.html">PSkelStencil.h</a>&quot;</span>
+<a name="l00077"></a>00077 
+<a name="l00078"></a>00078 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -155,11 +149,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 
-<hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 9 2015 03:36:33 for PSkel by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.7.6.1
-</small></address>
+<hr class="footer"/>
+<address class="footer">
+ <div style="float:left;"><a href="http://pskel.github.io/">PSkel Homepage</a></div>
+ <div style="float:right;">
+  <small>
+  Generated on Thu Jul 2 2015 19:15:45 for PSkel by &#160;<a href="http://www.doxygen.org/index.html">
+  <img class="footer" src="doxygen.png" alt="doxygen"/>
+  </a> 1.7.6.1
+  </small>
+ </div>
+</address>
 
 </body>
 </html>

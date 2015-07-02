@@ -91,20 +91,19 @@ This is the complete list of members for <a class="el" href="classPSkel_1_1Map2D
   <tr bgcolor="#f0f0f0"><td><b>args</b> (defined in <a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a>)</td><td><a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a></td><td><code> [protected]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>input</b> (defined in <a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a>)</td><td><a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a></td><td><code> [protected]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>Map2D</b>() (defined in <a class="el" href="classPSkel_1_1Map2D.html">PSkel::Map2D&lt; Arrays, Args &gt;</a>)</td><td><a class="el" href="classPSkel_1_1Map2D.html">PSkel::Map2D&lt; Arrays, Args &gt;</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>Map2D</b>(Arrays _input, Arrays _output, Args _args) (defined in <a class="el" href="classPSkel_1_1Map2D.html">PSkel::Map2D&lt; Arrays, Args &gt;</a>)</td><td><a class="el" href="classPSkel_1_1Map2D.html">PSkel::Map2D&lt; Arrays, Args &gt;</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>Map2D</b>(Arrays input, Arrays output, Args args) (defined in <a class="el" href="classPSkel_1_1Map2D.html">PSkel::Map2D&lt; Arrays, Args &gt;</a>)</td><td><a class="el" href="classPSkel_1_1Map2D.html">PSkel::Map2D&lt; Arrays, Args &gt;</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>output</b> (defined in <a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a>)</td><td><a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a></td><td><code> [protected]</code></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>runCPU</b>(size_t numThreads) (defined in <a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a>)</td><td><a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>runCUDA</b>(Arrays in, Arrays out, int _blockSize) (defined in <a class="el" href="classPSkel_1_1Map2D.html">PSkel::Map2D&lt; Arrays, Args &gt;</a>)</td><td><a class="el" href="classPSkel_1_1Map2D.html">PSkel::Map2D&lt; Arrays, Args &gt;</a></td><td><code> [protected, virtual]</code></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>runGPU</b>(size_t GPUBlockSize) (defined in <a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a>)</td><td><a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>runHybrid</b>(float GPUPartition, size_t GPUBlockSize, size_t numThreads) (defined in <a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a>)</td><td><a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>runIterativeCPU</b>(size_t iterations, size_t numThreads) (defined in <a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a>)</td><td><a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>runIterativeGPU</b>(size_t iterations, size_t GPUBlockSize) (defined in <a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a>)</td><td><a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>runIterativeHybrid</b>(size_t iterations, float GPUPartition, size_t GPUBlockSize, size_t numThreads) (defined in <a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a>)</td><td><a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>runCPU</b>(size_t numThreads=0) (defined in <a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a>)</td><td><a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>runCUDA</b>(Arrays in, Arrays out, int blockSize) (defined in <a class="el" href="classPSkel_1_1Map2D.html">PSkel::Map2D&lt; Arrays, Args &gt;</a>)</td><td><a class="el" href="classPSkel_1_1Map2D.html">PSkel::Map2D&lt; Arrays, Args &gt;</a></td><td><code> [protected]</code></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>runCUDA</b>(Arrays input, Arrays output, size_t blockSize)=0 (defined in <a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a>)</td><td><a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a></td><td><code> [protected, pure virtual]</code></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>runGPU</b>(size_t blockSize=0) (defined in <a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a>)</td><td><a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>runIterativeCPU</b>(size_t iterations, size_t numThreads=0) (defined in <a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a>)</td><td><a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>runIterativeGPU</b>(size_t iterations, size_t blockSize=0) (defined in <a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a>)</td><td><a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>runIterativeSequential</b>(size_t iterations) (defined in <a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a>)</td><td><a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>runOpenMP</b>(size_t numThreads) (defined in <a class="el" href="classPSkel_1_1Map2D.html">PSkel::Map2D&lt; Arrays, Args &gt;</a>)</td><td><a class="el" href="classPSkel_1_1Map2D.html">PSkel::Map2D&lt; Arrays, Args &gt;</a></td><td><code> [protected, virtual]</code></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>runOpenMP</b>(size_t numThreads) (defined in <a class="el" href="classPSkel_1_1Map2D.html">PSkel::Map2D&lt; Arrays, Args &gt;</a>)</td><td><a class="el" href="classPSkel_1_1Map2D.html">PSkel::Map2D&lt; Arrays, Args &gt;</a></td><td><code> [protected]</code></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>runOpenMP</b>(Array in, Array out, size_t numThreads)=0 (defined in <a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a>)</td><td><a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a></td><td><code> [protected, pure virtual]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>runSeq</b>(Arrays in, Arrays out) (defined in <a class="el" href="classPSkel_1_1Map2D.html">PSkel::Map2D&lt; Arrays, Args &gt;</a>)</td><td><a class="el" href="classPSkel_1_1Map2D.html">PSkel::Map2D&lt; Arrays, Args &gt;</a></td><td><code> [protected, virtual]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>runSequential</b>() (defined in <a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a>)</td><td><a class="el" href="classPSkel_1_1MapBase.html">PSkel::MapBase&lt; Arrays, Args &gt;</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>runTBB</b>(Arrays in, Arrays out, size_t numThreads) (defined in <a class="el" href="classPSkel_1_1Map2D.html">PSkel::Map2D&lt; Arrays, Args &gt;</a>)</td><td><a class="el" href="classPSkel_1_1Map2D.html">PSkel::Map2D&lt; Arrays, Args &gt;</a></td><td><code> [protected, virtual]</code></td></tr>
 </table></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -122,11 +121,17 @@ This is the complete list of members for <a class="el" href="classPSkel_1_1Map2D
 
 
 
-<hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 9 2015 03:36:37 for PSkel by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.7.6.1
-</small></address>
+<hr class="footer"/>
+<address class="footer">
+ <div style="float:left;"><a href="http://pskel.github.io/">PSkel Homepage</a></div>
+ <div style="float:right;">
+  <small>
+  Generated on Thu Jul 2 2015 19:15:48 for PSkel by &#160;<a href="http://www.doxygen.org/index.html">
+  <img class="footer" src="doxygen.png" alt="doxygen"/>
+  </a> 1.7.6.1
+  </small>
+ </div>
+</address>
 
 </body>
 </html>

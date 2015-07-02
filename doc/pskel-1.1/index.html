@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>PSkel: Main Page</title>
+<title>PSkel: PSkel: High-performance parallel skeletons</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -70,10 +70,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="headertitle">
-<div class="title">PSkel Documentation</div>  </div>
+<div class="title">PSkel: High-performance parallel skeletons </div>  </div>
 </div><!--header-->
 <div class="contents">
-</div><!-- contents -->
+<div class="textblock"><h2><a class="anchor" id="intro_sec"></a>
+Introduction</h2>
+<p>PSkel is a high-performance framework for parallel skeletons. Using a high-level abstraction for parallel skeletons, PSkel releases the programmer from the responsibility of writing boiler-plate code for parallel programming in heterogeneous architectures, e.g., explicit synchronization and data exchanges between GPU memory and main memory. Furthermore, the framework translates the abstractions described using its application programming interface (API) into lowlevel C++ code compatible with Intel TBB, OpenMP and NVIDIA CUDA. PSkel's API is mainly based on a C++ template library that implements parallel skeletons and provides useful constructs for developing parallel applications. The framework provides an API for manipulating input and output data; specifying stencil computations; encapsulating memory management, computations, and runtime details. </p>
+</div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -90,11 +93,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 
-<hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 9 2015 03:36:39 for PSkel by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.7.6.1
-</small></address>
+<hr class="footer"/>
+<address class="footer">
+ <div style="float:left;"><a href="http://pskel.github.io/">PSkel Homepage</a></div>
+ <div style="float:right;">
+  <small>
+  Generated on Thu Jul 2 2015 19:15:50 for PSkel by &#160;<a href="http://www.doxygen.org/index.html">
+  <img class="footer" src="doxygen.png" alt="doxygen"/>
+  </a> 1.7.6.1
+  </small>
+ </div>
+</address>
 
 </body>
 </html>

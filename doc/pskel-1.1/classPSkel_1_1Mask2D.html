@@ -98,8 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">PSkel::Mask2D&lt; T &gt; Class Template Reference</div>  </div>
 </div><!--header-->
@@ -118,31 +117,168 @@ Inheritance diagram for PSkel::Mask2D&lt; T &gt;:</div>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1304a178f74a4b5e67f5d97869351adf"></a><!-- doxytag: member="PSkel::Mask2D::Mask2D" ref="a1304a178f74a4b5e67f5d97869351adf" args="(size_t _size)" -->
-&#160;</td><td class="memItemRight" valign="bottom"><b>Mask2D</b> (size_t _size)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fc841654bc3ad039d573b65296dfa58"></a><!-- doxytag: member="PSkel::Mask2D::Mask2D" ref="a9fc841654bc3ad039d573b65296dfa58" args="(size_t _size, T _val)" -->
-&#160;</td><td class="memItemRight" valign="bottom"><b>Mask2D</b> (size_t _size, T _val)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a598f2a5728892b41c0a2f7f73241a4c2"></a><!-- doxytag: member="PSkel::Mask2D::set" ref="a598f2a5728892b41c0a2f7f73241a4c2" args="(size_t n, int x, int y, T w)" -->
-__device__ __host__ void&#160;</td><td class="memItemRight" valign="bottom"><b>set</b> (size_t n, int x, int y, T w)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d916260d4fbb561abb3ece0d49e32bc"></a><!-- doxytag: member="PSkel::Mask2D::set" ref="a5d916260d4fbb561abb3ece0d49e32bc" args="(size_t n, int x, int y)" -->
-__device__ __host__ void&#160;</td><td class="memItemRight" valign="bottom"><b>set</b> (size_t n, int x, int y)</td></tr>
-<tr><td class="memTemplParams" colspan="2"><a class="anchor" id="af9a947f9edd10bb5c46b7c2939847a1d"></a><!-- doxytag: member="PSkel::Mask2D::__attribute__" ref="af9a947f9edd10bb5c46b7c2939847a1d" args="((always_inline)) __forceinline__ __device__ __host__ T get(size_t n" -->
-template&lt;typename V &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>__attribute__</b> ((always_inline)) __forceinline__ __device__ __host__ T get(size_t n</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPSkel_1_1Mask2D.html#a404cae42f53b04aa9f20404329618113">Mask2D</a> (size_t size=0, T haloVal=T(0), size_t range=0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">__device__ __host__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPSkel_1_1Mask2D.html#a0f799a2fe31919b4190a9adc8cdadda9">set</a> (size_t n, int h, int w, T weight=T(0))</td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename V &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">__forceinline__ __device__ <br class="typebreak"/>
+__host__ T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classPSkel_1_1Mask2D.html#ad54cc5f5f544140416625ac7307c750c">get</a> (size_t n, <a class="el" href="classPSkel_1_1Array2D.html">Array2D</a>&lt; V &gt; array, size_t h, size_t w)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a934fb6b673f1fb8c350b6cc8b7790a87"></a><!-- doxytag: member="PSkel::Mask2D::getRange" ref="a934fb6b673f1fb8c350b6cc8b7790a87" args="()" -->
 __device__ __host__ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>getRange</b> ()</td></tr>
-<tr><td colspan="2"><h2><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab40d6b68b18480ca8285b63a0ea0a12a"></a><!-- doxytag: member="PSkel::Mask2D::array" ref="ab40d6b68b18480ca8285b63a0ea0a12a" args="" -->
-<a class="el" href="classPSkel_1_1Array2D.html">Array2D</a>&lt; V &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>array</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ae6f193e69fdb2bca3dda7af29f24e5"></a><!-- doxytag: member="PSkel::Mask2D::_x" ref="a0ae6f193e69fdb2bca3dda7af29f24e5" args="" -->
-<a class="el" href="classPSkel_1_1Array2D.html">Array2D</a>&lt; V &gt; size_t&#160;</td><td class="memItemRight" valign="bottom"><b>_x</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a171df5f4ab4422ee5b44a37772d761ad"></a><!-- doxytag: member="PSkel::Mask2D::_y" ref="a171df5f4ab4422ee5b44a37772d761ad" args="" -->
-<a class="el" href="classPSkel_1_1Array2D.html">Array2D</a>&lt; V &gt; size_t size_t&#160;</td><td class="memItemRight" valign="bottom"><b>_y</b></td></tr>
 </table>
 <h3>template&lt;typename T&gt;<br/>
  class PSkel::Mask2D&lt; T &gt;</h3>
 
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a404cae42f53b04aa9f20404329618113"></a><!-- doxytag: member="PSkel::Mask2D::Mask2D" ref="a404cae42f53b04aa9f20404329618113" args="(size_t size=0, T haloVal=T(0), size_t range=0)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPSkel_1_1Mask2D.html">PSkel::Mask2D</a>&lt; T &gt;::<a class="el" href="classPSkel_1_1Mask2D.html">Mask2D</a> </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>haloVal</em> = <code>T(0)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>range</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>The <a class="el" href="classPSkel_1_1Mask2D.html">Mask2D</a> constructor creates and allocates the specified 2-dimensional mask in the host memory. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>the size of the 2D mask. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">haloVal</td><td>the value used when the array is accessed out of bounds. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">range</td><td>the range of the mask; if range is 0, it is calculated as the maximum absolute value on the mask. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="ad54cc5f5f544140416625ac7307c750c"></a><!-- doxytag: member="PSkel::Mask2D::get" ref="ad54cc5f5f544140416625ac7307c750c" args="(size_t n, Array2D&lt; V &gt; array, size_t h, size_t w)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<div class="memtemplate">
+template&lt;typename V &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="classPSkel_1_1Mask2D.html">PSkel::Mask2D</a>&lt; T &gt;::<a class="el" href="classPSkel_1_1Mask2D.html#ad54cc5f5f544140416625ac7307c750c">get</a> </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classPSkel_1_1Array2D.html">Array2D</a>&lt; V &gt;&#160;</td>
+          <td class="paramname"><em>array</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>w</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Get the n-th neighbor from the specified input array. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>the index of the neighbor. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">array</td><td>the input 2D array. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>the height index for the central element. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>the width index for the central element. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>the n-th neighbor of the given central element, from the input array. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0f799a2fe31919b4190a9adc8cdadda9"></a><!-- doxytag: member="PSkel::Mask2D::set" ref="a0f799a2fe31919b4190a9adc8cdadda9" args="(size_t n, int h, int w, T weight=T(0))" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classPSkel_1_1Mask2D.html">PSkel::Mask2D</a>&lt; T &gt;::<a class="el" href="classPSkel_1_1Mask2D.html#a0f799a2fe31919b4190a9adc8cdadda9">set</a> </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>weight</em> = <code>T(0)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Set the mask information for accessing the n-th neighbor for a given element. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>the index of the neighbor. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>the height index translation needed for acessing the n-th neighbor. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>the width index translation needed for acessing the n-th neighbor. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">weight</td><td>the weight defined for the n-th neighbor. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/<a class="el" href="PSkelMask_8h_source.html">PSkelMask.h</a></li>
 <li>src/<a class="el" href="PSkelMask_8hpp_source.html">PSkelMask.hpp</a></li>
@@ -164,11 +300,17 @@ Public Attributes</h2></td></tr>
 
 
 
-<hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 9 2015 03:36:38 for PSkel by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.7.6.1
-</small></address>
+<hr class="footer"/>
+<address class="footer">
+ <div style="float:left;"><a href="http://pskel.github.io/">PSkel Homepage</a></div>
+ <div style="float:right;">
+  <small>
+  Generated on Thu Jul 2 2015 19:15:49 for PSkel by &#160;<a href="http://www.doxygen.org/index.html">
+  <img class="footer" src="doxygen.png" alt="doxygen"/>
+  </a> 1.7.6.1
+  </small>
+ </div>
+</address>
 
 </body>
 </html>

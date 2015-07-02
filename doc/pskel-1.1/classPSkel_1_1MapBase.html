@@ -121,32 +121,26 @@ Inheritance diagram for PSkel::MapBase&lt; Arrays, Args &gt;:</div>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af61c0c17b9dc92669f84bb85f4dbc95a"></a><!-- doxytag: member="PSkel::MapBase::runOpenMP" ref="af61c0c17b9dc92669f84bb85f4dbc95a" args="(size_t numThreads)=0" -->
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>runOpenMP</b> (size_t numThreads)=0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e09cfa1278a9c9c4050c47eeebb981a"></a><!-- doxytag: member="PSkel::MapBase::runSequential" ref="a6e09cfa1278a9c9c4050c47eeebb981a" args="()" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>runSequential</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e6debc1e0ab55fd684620f7c05d4c6d"></a><!-- doxytag: member="PSkel::MapBase::runCPU" ref="a4e6debc1e0ab55fd684620f7c05d4c6d" args="(size_t numThreads)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>runCPU</b> (size_t numThreads)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37f640ed8deee661e07110921cb35cbf"></a><!-- doxytag: member="PSkel::MapBase::runGPU" ref="a37f640ed8deee661e07110921cb35cbf" args="(size_t GPUBlockSize)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>runGPU</b> (size_t GPUBlockSize)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae093ef67318f9b6a688ae0380c6966a8"></a><!-- doxytag: member="PSkel::MapBase::runHybrid" ref="ae093ef67318f9b6a688ae0380c6966a8" args="(float GPUPartition, size_t GPUBlockSize, size_t numThreads)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>runHybrid</b> (float GPUPartition, size_t GPUBlockSize, size_t numThreads)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e7ec82c3f8f42405aba0a0a208f7d16"></a><!-- doxytag: member="PSkel::MapBase::runCPU" ref="a6e7ec82c3f8f42405aba0a0a208f7d16" args="(size_t numThreads=0)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>runCPU</b> (size_t numThreads=0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a410f6abd9285cb54cae02f91c32cbb12"></a><!-- doxytag: member="PSkel::MapBase::runGPU" ref="a410f6abd9285cb54cae02f91c32cbb12" args="(size_t blockSize=0)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>runGPU</b> (size_t blockSize=0)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19bc8d19e4dee75a702791cf3a8d066d"></a><!-- doxytag: member="PSkel::MapBase::runIterativeSequential" ref="a19bc8d19e4dee75a702791cf3a8d066d" args="(size_t iterations)" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>runIterativeSequential</b> (size_t iterations)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b77c9cf4cb789b301c10f06bd28e8ba"></a><!-- doxytag: member="PSkel::MapBase::runIterativeCPU" ref="a9b77c9cf4cb789b301c10f06bd28e8ba" args="(size_t iterations, size_t numThreads)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>runIterativeCPU</b> (size_t iterations, size_t numThreads)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb14899d4e074f3c516a06b222816e37"></a><!-- doxytag: member="PSkel::MapBase::runIterativeGPU" ref="acb14899d4e074f3c516a06b222816e37" args="(size_t iterations, size_t GPUBlockSize)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>runIterativeGPU</b> (size_t iterations, size_t GPUBlockSize)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a5032b12a1b029a1a5260c8d6f2c9c6"></a><!-- doxytag: member="PSkel::MapBase::runIterativeHybrid" ref="a6a5032b12a1b029a1a5260c8d6f2c9c6" args="(size_t iterations, float GPUPartition, size_t GPUBlockSize, size_t numThreads)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>runIterativeHybrid</b> (size_t iterations, float GPUPartition, size_t GPUBlockSize, size_t numThreads)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6088dd54c6126ba050e88107f22888c"></a><!-- doxytag: member="PSkel::MapBase::runIterativeCPU" ref="ab6088dd54c6126ba050e88107f22888c" args="(size_t iterations, size_t numThreads=0)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>runIterativeCPU</b> (size_t iterations, size_t numThreads=0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20ecd44db416f899fec283a268efb898"></a><!-- doxytag: member="PSkel::MapBase::runIterativeGPU" ref="a20ecd44db416f899fec283a268efb898" args="(size_t iterations, size_t blockSize=0)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>runIterativeGPU</b> (size_t iterations, size_t blockSize=0)</td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac01eb102487b645073814a22e1f4e646"></a><!-- doxytag: member="PSkel::MapBase::runSeq" ref="ac01eb102487b645073814a22e1f4e646" args="(Arrays in, Arrays out)=0" -->
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>runSeq</b> (Arrays in, Arrays out)=0</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf51a988c628474a9a762c6a5977809b"></a><!-- doxytag: member="PSkel::MapBase::runTBB" ref="acf51a988c628474a9a762c6a5977809b" args="(Arrays in, Arrays out, size_t numThreads)=0" -->
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>runTBB</b> (Arrays in, Arrays out, size_t numThreads)=0</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaaa62e5911a9f60528f312a68fb85178"></a><!-- doxytag: member="PSkel::MapBase::runCUDA" ref="aaaa62e5911a9f60528f312a68fb85178" args="(Arrays input, Arrays output, int GPUBlockSize)=0" -->
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>runCUDA</b> (Arrays input, Arrays output, int GPUBlockSize)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae22864ee2d6aa0198a24e1c6ae4e0b6d"></a><!-- doxytag: member="PSkel::MapBase::runOpenMP" ref="ae22864ee2d6aa0198a24e1c6ae4e0b6d" args="(Array in, Array out, size_t numThreads)=0" -->
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>runOpenMP</b> (<a class="el" href="classPSkel_1_1Array.html">Array</a> in, <a class="el" href="classPSkel_1_1Array.html">Array</a> out, size_t numThreads)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a933c5db1df45ef960b596724575c459a"></a><!-- doxytag: member="PSkel::MapBase::runCUDA" ref="a933c5db1df45ef960b596724575c459a" args="(Arrays input, Arrays output, size_t blockSize)=0" -->
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>runCUDA</b> (Arrays input, Arrays output, size_t blockSize)=0</td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfa2d26b9ba4498a8152356d978358e4"></a><!-- doxytag: member="PSkel::MapBase::input" ref="acfa2d26b9ba4498a8152356d978358e4" args="" -->
@@ -180,11 +174,17 @@ Arrays&#160;</td><td class="memItemRight" valign="bottom"><b>output</b></td></tr
 
 
 
-<hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 9 2015 03:36:37 for PSkel by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.7.6.1
-</small></address>
+<hr class="footer"/>
+<address class="footer">
+ <div style="float:left;"><a href="http://pskel.github.io/">PSkel Homepage</a></div>
+ <div style="float:right;">
+  <small>
+  Generated on Thu Jul 2 2015 19:15:48 for PSkel by &#160;<a href="http://www.doxygen.org/index.html">
+  <img class="footer" src="doxygen.png" alt="doxygen"/>
+  </a> 1.7.6.1
+  </small>
+ </div>
+</address>
 
 </body>
 </html>
