@@ -59,7 +59,7 @@
 
           <div class="blog-post">
             <h2 class="blog-post-title">Publications</h2>
-            <h4>Scientific journals</h4>
+            <h3>Scientific journals</h3>
               <p align="justify">
           <strong>PSkel: A Stencil programming framework for CPU-GPU systems</strong>
               <small>
@@ -69,15 +69,15 @@
               Alyson D. Pereira, Luiz Ramos, Luís F. W. Góes<br/>
               Concurrency and Computation: Practice and Experience, 2015
           </p>
-          <h4> Conferences and symposiums </h4>
+          <h3> Conferences and symposiums </h3>
 	      <p align="justify">
-              <strong>PSkel-MPPA: Uma adaptação do framework PSkel para o processador manycore MPPA-256</strong>
+              <strong>PSkel-MPPAl</strong>
               <small>
-                  <a href="papers/eradrs2016mppa.pdf" target="_blank">[pdf]</a>
-                  <a href="papers/eradrs2016mppa.bib" target="_blank">[bibtex]</a>
+                  <a href="papers/wscadwic15stencilbench.pdf" target="_blank">[pdf]</a>
+                  <a href="papers/wscadwic15stencilbench.bib" target="_blank">[bibtex]</a>
               </small><br/>
-              Emmanuel Podestá, Alyson Pereira, Pedro Penna, Rodrigo Caetano Rocha, Márcio Castro, Luís F. W. Góes<br/>
-	           ERAD/RS 2016 - Escola Regional de Alto Desempenho do Estado do Rio Grande do Sul
+              Alyson D. Pereira, Sérgio V. Silva, Rodrigo C. O. Rocha, Márcio B. Castro, Luís F. W. Góes<br/>
+              XVI Simpósio em Sistemas Computacionais - Workshop de Iniciação Científica, WSCAD-WIC 2015
           </p>
 	      <p align="justify">
               <strong>StencilBench: Um benchmark sintético para avaliação de frameworks do padrão estêncil</strong>
